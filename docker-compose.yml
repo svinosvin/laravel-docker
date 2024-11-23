@@ -37,7 +37,7 @@ services:
       dockerfile: php.Dockerfile
     volumes:
       - ./src:/var/www/laravel  
-    entypoint: ['php', '/var/www/laravel/artisan']  
+    entrypoint: ['php', '/var/www/laravel/artisan']  
 volumes:
   db_data:
    
