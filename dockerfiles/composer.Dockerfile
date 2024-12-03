@@ -3,4 +3,4 @@ FROM composer:latest
 
 WORKDIR /var/www/laravel
 
-ENTRYPOINT [ "composer", '--ignore-platform-reqs' ]
+ENTRYPOINT [ "composer","--ignore-platform-reqs","--prefer-dist" ]
